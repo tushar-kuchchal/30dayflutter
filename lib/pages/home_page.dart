@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
 
 import "package:flutter/material.dart";
+import "package:flutter_tutorail/widgets/drawer.dart";
 
 class Home extends StatelessWidget {
   @override
@@ -9,6 +10,6 @@ class Home extends StatelessWidget {
       title: Text('Flutter Tutorail'),
     ),
     
-    drawer: Drawer(),);
+    drawer: MyDrawer(),);
   }
 }

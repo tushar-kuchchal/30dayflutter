@@ -6,6 +6,7 @@ import 'package:flutter_tutorail/pages/login.dart';
 import 'package:flutter_tutorail/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+
 void main() {
   runApp(MainApp());
 }
@@ -21,7 +22,7 @@ class MainApp extends StatelessWidget {
           primarySwatch: Colors.purple,
           fontFamily: GoogleFonts.lato().fontFamily),
       darkTheme: ThemeData(brightness: Brightness.dark),
-      initialRoute: MyRoute.login,
+      initialRoute: MyRoute.home,
       routes: {
         MyRoute.login: (context) => Login(),
         MyRoute.home: (context) => Home()
