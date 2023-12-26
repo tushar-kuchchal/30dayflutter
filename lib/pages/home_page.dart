@@ -6,10 +6,11 @@ import "package:flutter_tutorail/widgets/drawer.dart";
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(
-      title: Text('Flutter Tutorail'),
-    ),
-    
-    drawer: MyDrawer(),);
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('catalog app'),
+      ),
+      drawer: MyDrawer(),
+    );
   }
 }

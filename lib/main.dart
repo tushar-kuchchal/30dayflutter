@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorail/pages/home_page.dart';
 import 'package:flutter_tutorail/pages/login.dart';
 import 'package:flutter_tutorail/utils/routes.dart';
-import 'package:google_fonts/google_fonts.dart';
-
+import 'package:flutter_tutorail/widgets/theme.dart';
 
 void main() {
   runApp(MainApp());
@@ -18,10 +17,8 @@ class MainApp extends StatelessWidget {
       // home: Home(),
       themeMode: ThemeMode.light,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          primarySwatch: Colors.purple,
-          fontFamily: GoogleFonts.lato().fontFamily),
-      darkTheme: ThemeData(brightness: Brightness.dark),
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
       initialRoute: MyRoute.home,
       routes: {
         MyRoute.login: (context) => Login(),
